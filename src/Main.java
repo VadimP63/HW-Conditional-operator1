@@ -3,7 +3,7 @@ public class Main {
         System.out.println("Task1");
         int age = 15;
         if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age + ", то н совершеннолетний");
+            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
         }
         else {
             System.out.println("Нужно немного подождать");
@@ -19,14 +19,14 @@ public class Main {
             System.out.println("Если скорость " + speed + ", то придется заплатить штраф");
         }
         if (speed <= 60) {
-            System.out.println("Если скорость" + speed + ", можно ездить спокойно");
+            System.out.println("Если скорость" + speed + ", то можно ездить спокойно");
         }
         System.out.println("Task4");
         int old = 21;
-        if (old > 2 && old < 6) {
+        if (old > 2 && old <= 6) {
             System.out.println("Если возраст человека равен " + old + ", то ему нужно ходить в детский сад");
         }
-        if (old > 7 && old < 17) {
+        if (old >= 7 && old < 17) {
             System.out.println("Если возраст человека равен " + old + ", то ему нужно ходить в школу");
         }
         if (old >= 18 && old <= 24) {
@@ -40,7 +40,7 @@ public class Main {
         if (ageChild < 5) {
             System.out.println("Если возраст ребенка равен " + ageChild  + ", он не может кататься на аттракционе.");
         }
-        if (ageChild > 5 || ageChild < 14) {
+        if (ageChild > 5 && ageChild < 14) {
             System.out.println("Если возраст ребенка равен " + ageChild  + ", то он может кататься только в сопровождении" +
                     " взрослого. Если взрослого нет, то кататься нельзя.");
         }
